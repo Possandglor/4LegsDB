@@ -11,6 +11,7 @@ namespace _4LegsDB
     internal class ClientManipulator
     {
         public List<Client> foundClient = new List<Client>();
+        public List<Visit> VisitList = new List<Visit>();
         public int selectedClient;
         public List<Client> ClientList = new List<Client>();
 

@@ -28,15 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.FIOSearchTxt = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.petNameSearchTxt = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.phoneNumberSearchTxt = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label11 = new System.Windows.Forms.Label();
             this.phoneNumberTxt = new System.Windows.Forms.TextBox();
             this.commentTxt = new System.Windows.Forms.RichTextBox();
@@ -57,109 +51,60 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.FIOTxt = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.phoneNumberSearchTxt = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.petNameSearchTxt = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.FIOSearchTxt = new System.Windows.Forms.TextBox();
+            this.tabControl1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // FIOSearchTxt
+            // tabControl1
             // 
-            this.FIOSearchTxt.Location = new System.Drawing.Point(827, 18);
-            this.FIOSearchTxt.Name = "FIOSearchTxt";
-            this.FIOSearchTxt.Size = new System.Drawing.Size(100, 20);
-            this.FIOSearchTxt.TabIndex = 0;
-            this.FIOSearchTxt.TextChanged += new System.EventHandler(this.SearchClients);
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(912, 525);
+            this.tabControl1.TabIndex = 0;
             // 
-            // label1
+            // tabPage1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(778, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Ф.И.О.";
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(904, 499);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Расписание";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // petNameSearchTxt
+            // tabPage2
             // 
-            this.petNameSearchTxt.Location = new System.Drawing.Point(827, 52);
-            this.petNameSearchTxt.Name = "petNameSearchTxt";
-            this.petNameSearchTxt.Size = new System.Drawing.Size(100, 20);
-            this.petNameSearchTxt.TabIndex = 2;
-            this.petNameSearchTxt.TextChanged += new System.EventHandler(this.SearchClients);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(721, 55);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Кличка животного";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(728, 91);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Номер телефона";
-            // 
-            // phoneNumberSearchTxt
-            // 
-            this.phoneNumberSearchTxt.Location = new System.Drawing.Point(827, 88);
-            this.phoneNumberSearchTxt.Name = "phoneNumberSearchTxt";
-            this.phoneNumberSearchTxt.Size = new System.Drawing.Size(100, 20);
-            this.phoneNumberSearchTxt.TabIndex = 5;
-            this.phoneNumberSearchTxt.TextChanged += new System.EventHandler(this.SearchClients);
-            // 
-            // listBox1
-            // 
-            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(734, 141);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(193, 316);
-            this.listBox1.TabIndex = 6;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(821, 125);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Результаты поиска";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.phoneNumberTxt);
-            this.groupBox1.Controls.Add(this.commentTxt);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.petBirthDateTxt);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.petBreedTxt);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.petSexTxt);
-            this.groupBox1.Controls.Add(this.petNameTxt);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.FIOTxt);
-            this.groupBox1.Location = new System.Drawing.Point(16, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(651, 445);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.tabPage2.Controls.Add(this.groupBox1);
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.listBox1);
+            this.tabPage2.Controls.Add(this.phoneNumberSearchTxt);
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.petNameSearchTxt);
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Controls.Add(this.FIOSearchTxt);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(904, 499);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Профиль клиента";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
@@ -187,9 +132,10 @@
             // 
             // dateTimePicker2
             // 
+            this.dateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimePicker2.CustomFormat = "yyyy-MM-dd HH:mm";
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(220, 377);
+            this.dateTimePicker2.Location = new System.Drawing.Point(220, 411);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(124, 20);
             this.dateTimePicker2.TabIndex = 27;
@@ -197,9 +143,10 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(220, 351);
+            this.dateTimePicker1.Location = new System.Drawing.Point(220, 385);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(124, 20);
             this.dateTimePicker1.TabIndex = 26;
@@ -207,7 +154,8 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(236, 415);
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(236, 449);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(108, 24);
             this.button2.TabIndex = 25;
@@ -216,23 +164,23 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(501, 415);
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(501, 449);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 24);
             this.button1.TabIndex = 24;
             this.button1.Text = "Сохранить";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label12
             // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(479, 16);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(133, 13);
             this.label12.TabIndex = 23;
             this.label12.Text = "Предыдущие посещения";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label10
             // 
@@ -309,12 +257,13 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(443, 39);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(190, 250);
+            this.dataGridView1.Size = new System.Drawing.Size(190, 284);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label6
             // 
@@ -332,42 +281,141 @@
             this.FIOTxt.Size = new System.Drawing.Size(206, 20);
             this.FIOTxt.TabIndex = 9;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.phoneNumberTxt);
+            this.groupBox1.Controls.Add(this.commentTxt);
+            this.groupBox1.Controls.Add(this.dateTimePicker2);
+            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.petBirthDateTxt);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.petBreedTxt);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.petSexTxt);
+            this.groupBox1.Controls.Add(this.petNameTxt);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.FIOTxt);
+            this.groupBox1.Location = new System.Drawing.Point(10, -2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(651, 492);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(788, 111);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(106, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Результаты поиска";
+            // 
+            // listBox1
+            // 
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(701, 127);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(193, 316);
+            this.listBox1.TabIndex = 15;
+            // 
+            // phoneNumberSearchTxt
+            // 
+            this.phoneNumberSearchTxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.phoneNumberSearchTxt.Location = new System.Drawing.Point(794, 88);
+            this.phoneNumberSearchTxt.Name = "phoneNumberSearchTxt";
+            this.phoneNumberSearchTxt.Size = new System.Drawing.Size(100, 20);
+            this.phoneNumberSearchTxt.TabIndex = 14;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(695, 91);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(93, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Номер телефона";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(688, 55);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Кличка животного";
+            // 
+            // petNameSearchTxt
+            // 
+            this.petNameSearchTxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.petNameSearchTxt.Location = new System.Drawing.Point(794, 52);
+            this.petNameSearchTxt.Name = "petNameSearchTxt";
+            this.petNameSearchTxt.Size = new System.Drawing.Size(100, 20);
+            this.petNameSearchTxt.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(745, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Ф.И.О.";
+            // 
+            // FIOSearchTxt
+            // 
+            this.FIOSearchTxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.FIOSearchTxt.Location = new System.Drawing.Point(794, 18);
+            this.FIOSearchTxt.Name = "FIOSearchTxt";
+            this.FIOSearchTxt.Size = new System.Drawing.Size(100, 20);
+            this.FIOSearchTxt.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(939, 467);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.phoneNumberSearchTxt);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.petNameSearchTxt);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.FIOSearchTxt);
+            this.ClientSize = new System.Drawing.Size(912, 525);
+            this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox FIOSearchTxt;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox petNameSearchTxt;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox phoneNumberSearchTxt;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox phoneNumberTxt;
+        private System.Windows.Forms.RichTextBox commentTxt;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
@@ -381,13 +429,14 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox FIOTxt;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.RichTextBox commentTxt;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox phoneNumberTxt;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.TextBox phoneNumberSearchTxt;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox petNameSearchTxt;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox FIOSearchTxt;
     }
 }
 
