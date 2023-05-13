@@ -16,7 +16,6 @@ namespace _4LegsDB
         public string petBreed {get; set;}
         public string petBirthDate {get; set;}
         public string comment {get; set;}
-        public string[] visits {get; set;}
         public string[] analyses { get; set; }
     }
 }

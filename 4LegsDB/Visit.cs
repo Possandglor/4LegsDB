@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace _4LegsDB
 {
-    internal class Visit
+    public class Visit
     {
-        public DateTime start { get; set; }
+        public string date { get; set; }
         public string phoneNumber { get; set; }
+        public string vid { get; set; }
         public string anamnez { get; set; }
         public string appointment { get; set; }
     }
